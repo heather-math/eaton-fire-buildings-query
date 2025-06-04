@@ -1,5 +1,5 @@
 # Eaton fire buildings query
-This program outputs a GeoJSON file that contains the polygon type building footprint data, along with the damage inspection information, within the fire perimeter of the 2025 Eaton fire. 
+This repository contains a GeoJSON file that contains the polygon type building footprint data, along with the damage inspection information, within the fire perimeter of the 2025 Eaton fire. 
 
 ## Data Sources
 1. **Buildings_2023_with_DINS** [[1]](#1).
