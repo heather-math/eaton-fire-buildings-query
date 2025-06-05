@@ -1,4 +1,4 @@
-# Eaton fire buildings query
+# Buildings in the Eaton fire zone
 This program outputs two GeoJSON files. One contains polygon-type building footprint data along with damage inspection information, all within the 2025 Eaton fire perimeter. The other represents a 60-meter buffered perimeter of the buildings, restricted to the Eaton fire perimeter.
 
 ## Data Sources
