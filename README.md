@@ -41,6 +41,16 @@ This dataset contains building footprints within and near the 2025 Eaton and Pal
 ## License
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
+## Data Attribution
+
+This repository includes geospatial data obtained from the Los Angeles County Enterprise GIS Hub.
+
+The data is provided by Los Angeles County and is subject to the [Los Angeles County Open Data Terms of Use](https://egis-lacounty.hub.arcgis.com/pages/open-data-terms-of-use).
+
+Please review the terms for any restrictions on use, redistribution, or attribution.
+
+For more information, visit the [LA County Enterprise GIS Hub](https://egis-lacounty.hub.arcgis.com/).
+
 
 ## References
 1. <a id="1"></a> County of Los Angeles, California, Enterprise GIS Repository. [Buildings 2023 with DINS](https://services.arcgis.com/RmCCgQtiZLDCtblq/ArcGIS/rest/services/Buildings_2023_with_DINS/FeatureServer/4)
