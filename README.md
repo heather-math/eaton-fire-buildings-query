@@ -32,7 +32,7 @@ This dataset contains building footprints within and near the 2025 Eaton and Pal
   
 ## Technologies
 -  `Python`
--  `requests
+-  `requests`
 - `geopandas`
 - `shapely`
 - `matplotlib` 
