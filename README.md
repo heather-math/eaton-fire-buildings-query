@@ -43,13 +43,7 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ## Data Attribution
 
-This repository includes geospatial data obtained from the Los Angeles County Enterprise GIS Hub.
-
-The data is provided by Los Angeles County and is subject to the [Los Angeles County Open Data Terms of Use](https://egis-lacounty.hub.arcgis.com/pages/open-data-terms-of-use).
-
-Please review the terms for any restrictions on use, redistribution, or attribution.
-
-For more information, visit the [LA County Enterprise GIS Hub](https://egis-lacounty.hub.arcgis.com/).
+This repository includes geospatial data obtained from the Los Angeles County Enterprise GIS Hub. The data is provided by Los Angeles County and is subject to the [Los Angeles County Open Data Terms of Use](https://egis-lacounty.hub.arcgis.com/pages/terms-of-use). Please review the terms for any restrictions on use, redistribution, or attribution. For more information, visit the [LA County Enterprise GIS Hub](https://egis-lacounty.hub.arcgis.com/).
 
 
 ## References
