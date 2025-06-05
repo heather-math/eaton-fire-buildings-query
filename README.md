@@ -23,7 +23,7 @@ This dataset contains building footprints within and near the 2025 Eaton and Pal
 3. `eaton_buildings_perimeter60.ipynb`:
    This Jupyter Notebook accomplishes the following tasks, most notebly exporting the `eaton_buildings_perimeter.geojson` file referenced below.
      - Creates a buffer zone of 60 meters around the perimeter of the buildings in `eaton_buildings.geojson`.  Note that 60 meters is approximately 200 feet, which is a commonly recommended defensive zone for fire protection. This buffer parameter of 60 meters can easily be adjusted.
-     - Restricts the buffered building perimeter to the Eaton fire perimeter and exports the result to a GeoJSON file. Below is a visual.
+     - Restricts the buffered building perimeter to the Eaton fire perimeter and exports the result to a GeoJSON file. The resulting total area is 12.53 square kilometers. Below is a visual.
       ![Alt_text](building_perimeter.png)
 
 4. `eaton_buildings_perimeter60.geojson`:
