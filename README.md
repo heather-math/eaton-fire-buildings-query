@@ -10,7 +10,7 @@ This dataset contains building footprints within and near the 2025 Eaton and Pal
    
 ## Files and Features
 1. `buildings_request_derivation.ipynb`:
-  This Jupyter Notebook accomplishes the following tasks. most notebly exporting the three `.geojson` files referenced below.
+   This Jupyter Notebook accomplishes the following tasks. most notebly exporting the three `.geojson` files referenced below.
     - Access the LA County Buildings_2023_with_DINS data via ArcGIS REST API.
     - As the dataset above contains the Palisades area as well, we exclude that and only retain buildings in the greater Eaton area.
     - Exclude buildings labeled as "Uninspected" or "Inaccessible", so only retain inspected buildings.  This exclusion is sensible because most such buildings are located outside of the fire perimeter, typically beyond a layer of inspected buildings marked as "No Damage".  As such, they are unlikely to contribute meaningfully to fire damage analysis.  Furthermore, there are very few uninspected buildings within the fire perimenter, most of which are minor side structures adjacent to inspected buildings. Therefore, excluding them is unlikely to significantly affect the analysis of building damage.
