@@ -43,7 +43,6 @@ Below is a Venn diagram for visualizing the different regions. Region A represen
 - `geopandas`
 - `shapely`
 - `matplotlib`
-- `matplotlib_venn`
 
 
 ## License
