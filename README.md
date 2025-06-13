@@ -26,7 +26,7 @@ This dataset contains building footprints within and near the 2025 Eaton and Pal
     This is the output GeoJSON file (334 KB). The Coordinate Reference System (CRS) is `EPSG:26911`.  It represents a 150-meter buffered perimeter of the buildings in `eaton_buildings.geojson`, clipped to remain within the adjusted fire perimeter.  The resulting total area is 22 square kilometers.
 
 ## Visualization
-Below is a rough plot of the buildings in the `eaton_buildings.geojson`. The fire perimeter is outlined in red color.  The adjusted fire perimeter is colored is filled in cyan color.  
+Below is a rough plot of the buildings in the `eaton_buildings.geojson`. The fire perimeter is outlined in red color.  The adjusted fire perimeter is filled with lightcoral color.  
 ![Alt text](rough_plot.png)
 
 Below is a plot of area within the perimeter given by `eaton_buildings_perimeter.geojson`.  
