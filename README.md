@@ -32,7 +32,7 @@ Below is a rough plot of the buildings in the `eaton_buildings.geojson`. The fir
 Below is a plot of area within the perimeter given by `eaton_buildings_perimeter.geojson`.  
 ![Alt_text](building_perimeter.png)
 
-Below is a Venn diagram for visualizing the different regions. Region A represents buffered footprints of damaged buildings.  Region B represents the fire perimeter.  Note that within B, but not in A, there are some undamaged buildings.  Region C represents buffered footprints of undamaged buildings located within the fire perimeter.  Note that the building footprints in C will all be contained in B; however, the buffered footprints might go out of B.  The union of A and B is the adjusted fire zone.  The area within the perimeter given by `eaton_buildings_perimeter.geojson` is given by A union (B intersect C)
+Below is a Venn diagram for visualizing the different regions. Region A represents buffered footprints of damaged buildings.  Region B represents the fire perimeter.  Note that within B, but not in A, there are some undamaged buildings.  Region C represents buffered footprints of undamaged buildings located within the fire perimeter.  Note that the building footprints in C will all be contained in B; however, the buffered footprints might go out of B.  The union of A and B is the adjusted fire zone.  The area within the perimeter given by `eaton_buildings_perimeter.geojson` is given by A union (C intersects B)
 ![Alt_text](regions_venn_diagram.png)
 
 
