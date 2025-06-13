@@ -9,20 +9,20 @@ This dataset contains building footprints within and near the 2025 Eaton and Pal
   This dataset contains the perimeters for the Eaton and Palisades fires, separately.  We will be using the Eaton perimenter only.  Despite it being the official fire perimeter, it is not 100% accurate.  In particular, some of the clearly burnt areas are not included within the fire perimeter; for example, the fire perimeter cuts through the middle of some buildings that were completely destroyed. We will use the term *fire perimeter* to refer to the boundary provided by this dataset, and *adjusted fire perimeter* to refer to the version in `eaton_adjusted_fire_perimeter.geojson`, described below.
    
 ## Files and Features
-1. `buildings_request_derivation.ipynb`:
-      This Jupyter Notebook accomplishes the following tasks. most notebly exporting the three `.geojson` files referenced below.
+1. `buildings_request_derivation.ipynb`:  
+      This Jupyter Notebook accomplishes the following tasks.
     - Access the LA County Buildings_2023_with_DINS data via ArcGIS REST API.
     - As the dataset above contains the Palisades area as well, we exclude that and only retain buildings in the greater Eaton area.
     - Exclude buildings labeled as "Uninspected" or "Inaccessible", so only retain inspected buildings.  This exclusion is sensible because most such buildings are located outside of the fire perimeter, typically beyond a layer of inspected buildings marked as "No Damage".  As such, they are unlikely to contribute meaningfully to fire damage analysis.  Furthermore, there are very few uninspected buildings within the fire perimenter, most of which are minor side structures adjacent to inspected buildings. Therefore, excluding them is unlikely to significantly affect the analysis of building damage.
     - Creates the three `.geojson` files below.
       
-2. `eaton_adjusted_fire_perimeter.geojson`:
+2. `eaton_adjusted_fire_perimeter.geojson`:  
     This is the output GeoJSON file (246 KB). The Coordinate Reference System (CRS) is `EPSG:26911`, which corresponds to UTM Zone 11N containing Los Angeles County, and it uses meters as units, making it suitable for distance-based modeling.  The adjusted fire perimeter is the union of the fire perimeter with the 150-meter buffered footprints of the damaged buildings. The buffer size of 150 meters (approximately 500 feet) was chosen based on several considerations: the typical extent of fire impact, the median length of a city block, and the scale of neighborhoods containing a mix of damaged and undamaged buildings. This buffer allows for analysis of spatial patterns at a meaningful neighborhood scale. There are 9899 damaged buildings. 
 
-3. `eaton_buildings.geojson`:
+3. `eaton_buildings.geojson`:  
      This is the output GeoJSON file (18.7 MB). The Coordinate Reference System (CRS) is `EPSG:26911`.  It contains polygon-type footprint data along with damage inspection information for all inspected buildings within the adjusted fire perimeter.  It contains 17407 buildings.
 
-4. `eaton_buildings_perimeter.geojson`:
+4. `eaton_buildings_perimeter.geojson`:  
     This is the output GeoJSON file (334 KB). The Coordinate Reference System (CRS) is `EPSG:26911`.  It represents a 150-meter buffered perimeter of the buildings in `eaton_buildings.geojson`, clipped to remain within the adjusted fire perimeter.  The resulting total area is 22 square kilometers.
 
 ## Visualization
